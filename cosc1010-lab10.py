@@ -48,6 +48,9 @@ try:
         path = Path('rockyou.txt')
         contents = path.read_text()
         lines = contents.splitlines()
+    except:
+        print("Error reading the file 'rockyou.txt'.")
+    else:
         for item in lines:
             password = item
             code = get_hash(item)
@@ -56,7 +59,5 @@ try:
                 break
             else:
                 continue
-    except:
-        print("Error reading the file 'rockyou.txt'.")
 except:
     print("Error reading the file 'hash'.")
