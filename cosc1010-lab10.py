@@ -3,7 +3,7 @@
 # Submission Date 11/18/2024
 # Lab 10
 # Lab Section: 14
-# Sources, people worked with, help given to: 
+# Sources, people worked with, help given to: Stack Overflow, Geeks for Geeks
 # your
 # comments
 # here
