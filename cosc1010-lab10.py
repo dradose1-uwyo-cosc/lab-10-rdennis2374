@@ -43,7 +43,7 @@ def get_hash(to_hash):
 
 try:
     hash = Path('hash')
-    hash_pass = hash.read_text().strip()
+    hash_password = hash.read_text().strip()
     try:
         path = Path('rockyou.txt')
         contents = path.read_text()
@@ -54,7 +54,7 @@ try:
         for item in lines:
             password = item
             code = get_hash(item)
-            if code == hash_pass:
+            if code == hash_password:
                 print(f"{password} is the password.")
                 break
             else:

@@ -7,7 +7,7 @@
 # your
 # comments
 # here
-# image from smartkidworld.com
+# refrence image from smartkidworld.com
 from pathlib import Path
 import openpyxl
 from openpyxl.styles import Color,PatternFill
@@ -16,9 +16,9 @@ wb = openpyxl.Workbook()
 sheet = wb.active
 letters = ['A','B','C','D','E','F','G','H','I','J']
 for i in range (1,12):
-    sheet.row_dimensions[i].height = 28.8
+    sheet.row_dimensions[i].height = 29
 for letter in letters:
-    sheet.column_dimensions[letter].width = 4.56
+    sheet.column_dimensions[letter].width = 5
 orange_fill = PatternFill(patternType='solid', fgColor='FFA500')
 yellow_fill = PatternFill(patternType='solid', fgColor='FFFF00')
 red_fill = PatternFill(patternType='solid', fgColor='FF0000')
